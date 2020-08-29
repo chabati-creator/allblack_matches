@@ -1,21 +1,10 @@
-CountryID,Country,,,
-1,Australia,,,
-2,England,,,
-3,Fiji,,,
-4,Namibia,,,
-5,Samoa,,,
-6,South Africa,,,
-7,USA,,,
-8,Wales,,,
-9,New Zealand,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+CountryID,Country
+1,Australia
+2,England
+3,Fiji
+4,Namibia
+5,Samoa
+6,South Africa
+7,USA
+8,Wales
+9,New Zealand

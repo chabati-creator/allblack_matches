@@ -1,11 +1,15 @@
         <div class="box side">
-           
-           
+            
+            <h2>Search Area</h2>
+            
+            <p>
+                This is where the search are goes
+            </p>
             
         </div> <!-- / side bar -->
         
         <div class="box footer">
-            CC GTT 20XX
+            Charles Batistis
         </div> <!-- / footer -->
                 
         

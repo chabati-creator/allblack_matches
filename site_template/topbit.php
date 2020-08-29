@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="css/data_style.css">    <!-- custom style sheet -->
 
     
-</head>
-
+</head> 
+    
 <body>
     
     <p class="message">Eek!  Your browser does not support grid.  Please upgrade your system.</p>
@@ -42,10 +42,10 @@
     
         <!-- logo / small image goes here -->
         <div class="box logo">
-            <a href="index.php"><img src="images/logo.png" width="261" height="150" alt="Dice" /></a>
+            <a href="index.php"><img src="images/logo.png" width="392" height="150" alt="All Blacks Logo" /></a>
         </div> <!-- / logo -->
         
         <div class="box banner">
-            <h1>Games Database</h1>        
+            <h1>All Black Matches</h1>        
         </div> <!-- / banner -->
                        
