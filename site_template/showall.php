@@ -1,7 +1,8 @@
 <?php include("topbit.php");
 
 
-    $find_sql = "SELECT country.Country AS Opponent, location.Location AS `Match location`, allblack_matches.Date , allblack_matches.Result , allblack_matches.OppDebutants , allblack_matches.Debutants , allblack_matches.OppTries,     allblack_matches.AbTries, allblack_matches.LastLoss, allblack_matches.OppRating, allblack_matches.AbRating
+    $find_sql = "SELECT country.Country AS Opponent, location.Location AS `Match location`, allblack_matches.Date, 
+    allblack_matches.Result, allblack_matches.OppDebutants, allblack_matches.Debutants, allblack_matches.OppTries,     allblack_matches.AbTries, allblack_matches.LastLoss, allblack_matches.OppRating, allblack_matches.AbRating
     FROM `allblack_matches` 
     INNER JOIN `country` ON OppositionID = country.CountryID
     INNER JOIN `location` ON allblack_matches.LocationID= location.LocationID
@@ -44,28 +45,33 @@
     <!-- Results go here -->
     <div class="results">
         <span class="sub_heading">
-            All Black Rating: <?php echo $find_rs['AbRating']; ?>
-            <br />
-            as: <?php echo $find_rs['OppRating']; ?>
-            <br />
-            sd: <?php echo $find_rs['LastLoss']; ?>
-            <br />
-            as: <?php echo $find_rs['AbTries']; ?>
-            <br />
-            Opp Tries: <?php echo $find_rs['OppTries']; ?>
-            <br />
-            Debutants: <?php echo $find_rs['Debutants']; ?>
-            <br />
-            Opposition Debutants: <?php echo $find_rs['OppDebutants']; ?>
-            <br />
-            Result: <?php echo $find_rs['Result']; ?>
-            <br />
             Date: <?php echo  $find_rs['Date']; ?>
             <br />
-            Opponent: <?php echo  $find_rs['Opponent']; ?>
-            <br />
-            Match location: <?php echo  $find_rs['Match location']; ?>
         </span>
+
+        <b>Opponent:</b> <?php echo  $find_rs['Opponent']; ?>
+        <br />
+        <b>Result:</b> <?php echo $find_rs['Result']; ?>
+        <hr />
+
+        <b>Match location</b>: <?php echo  $find_rs['Match location']; ?>
+        <br />
+        <b>Games since last loss:</b> <?php echo $find_rs['LastLoss']; ?>
+        <br />
+        <b>Opposition Debutants:</b> <?php echo $find_rs['OppDebutants']; ?>
+        <br />
+        <b>Debutants:</b> <?php echo $find_rs['Debutants']; ?>
+        <br />
+        <b>Opposition tries in last 5 games:</b> <?php echo $find_rs['OppTries']; ?>
+        <br />
+        <b>Tries in last 5 games:</b> <?php echo $find_rs['AbTries']; ?>
+        <br />
+        <hr />
+
+        <b>Opposition Rating:</b> <?php echo $find_rs['OppRating']; ?>
+        <br />
+        <b>All Black Rating:</b> <?php echo $find_rs['AbRating']; ?>
+        <br />
     </div> <!-- / results -->
 
     <br />
